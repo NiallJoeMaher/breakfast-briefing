@@ -1,7 +1,7 @@
 import React from "react";
 import { css } from "@emotion/core";
 import styled from "@emotion/styled";
-import spLogo from "../../static/sp-circle.jpg";
+import spLogo from "../../static/singlepoint-main.png";
 
 import SEO from "../components/site-chrome/seo";
 import theme from "../theme";
@@ -104,17 +104,6 @@ export default ({ header = "true", children }) => (
             Home
           </a>
         </P>
-        <img
-          src={spLogo}
-          alt="singlepoint circle"
-          style={{
-            height: "2em",
-            padding: "0 20px",
-            position: "absolute",
-            left: "50%",
-            transform: "translate(-50%, 0)"
-          }}
-        />
       </Header>
     ) : null}
     <Main className="main">{children}</Main>
@@ -126,6 +115,18 @@ export default ({ header = "true", children }) => (
           by{" "}
           <a href="https://www.linkedin.com/in/nialljoemaher/">Niall Maher</a>
         </span>
+        <img
+          src={spLogo}
+          alt="singlepoint circle"
+          style={{
+            height: "2em",
+            padding: "0 20px",
+            position: "absolute",
+            right: "20px",
+            top: "50%",
+            transform: "translate(0, -50%)"
+          }}
+        />
       </FooterByline>
     </Footer>
   </>
